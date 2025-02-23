@@ -1,150 +1,99 @@
 {
-  "name": "TREX-BOT",
-  "description": "This is a simple whatsapp bot built with nodejs and baileys with MD support.",
-  "keywords": [
-    "bot",
-    "whatsapp",
-    "Bera",
-    "whatsapp-stickers",
-    "anime",
-    "whatsapp-bot",
-    "whatsapp-sticker-bot",
-    "whatsapp-botto",
-    "baileys",
-    "baileys-md",
-    "md-bot"
-  ],
-  "website": "https://github.com/Berabruce/TREX-BOT#readme",
-  "repository": "https://github.com/Berabruce/TREX-BOT.git",
-  "logo": "https://i.ibb.co/4jBhn13/Socialthumb.jpg",
-  "success_url": "/",
-  "env": {
-    "PREFIX": {
-      "description": "choose your prefix for BERA. To prevent errors and confusion you must set a prefix",
-      "value": ".",
-      "required": true
-    },
-    "DEV": {
-      "description": "Put any phone numbers you want to be bot owner without + or spaces \",\" Ex: 254748387615, 254796299159 ",
-      "required": false
-    },
-    "API": {
-      "description": "add your heroku api key here to be able to control config varses directly in your pm  ",
-      "required": true
-
-    },
-    "APPNAME": {
-      "description": "repeat your heroku appname here",
-      "required": true
- 
-    },
-    "ANTICALL": {
-      "description": "Type true if you want the bot to decline unnecessary calls ",
-      "value": "true",
-      "required": false
-    },
-    "PM_PERMIT": {
-      "description": "Type true if you want the bot to deny requests in your pm",
-      "value": "true",
-      "required": false
-      },
-    "ANTI_BAD_WORD": {
-      "description": "Type true if you want bot to automatically detect bad words and remove or block in your pm ",
-      "value": "true",
-      "required": false
-   
-    },
-    "CODE": {
-      "description": "Enter your country code without +. Example: 254 for Kenya. This will allow bot to detect and remove foreigners if commanded",
-      "value": "254",
-      "required": true
-    },
-    "STICKER_AUTHOR": {
-      "description": "Put your sticker author data",
-      "value": "Bera",
-      "required": false
-    },
-    "STICKER_PACKNAME": {
-      "description": "Put your sticker packname data",
-      "value": "Bruce",
-      "required": false
-    },
-    "BOTNAME": {
-      "description": "Enter name for your bot,,you can change this.",
-      "value": "TREX MD",
-      "required": false
-    },
-    "GC_PRESENCE": {
-      "description": "Type true if you want bot to show fake recording/typing in group chats.",
-      "required": false
-    },
-    "SESSION": {
-      "description": "Paste the session id that you received in whatsapp after linking the bot. It's used for authentication.",
-      "required": true
-    },
-    "AUTOVIEW_STATUS": {
-      "description": "Type true if you want bot to automatically read all status update",
-      "value": "true",
-      "required": false
-    },
-
-"EVENTS": {
-      "description": "choose whether to allow bot to detect events in groups such as promote, demote, remove and add. If set to true bot will send welcome/goodbye messages and signal when somebody is promoted or demoted.",
-      "value": "false",
-      "required": true
-    },
-"AUTOBIO": {
-      "description": "Type true if you want bot to autoupdate it's bio constantly",
-      "value": "true",
-      "required": false
-    },
-
-"ANTITAG": {
-      "description": "Type true if you want bot to automatically remove members who tagall or use hidetag.",
-      "value": "true",
-      "required": false
-    },
-"ANTILINK": {
-      "description": "Type true if you want bot to automatically remove members who send link.",
-      "value": "true",
-      "required": false
-    },    
-"AUTOREACT": {
-      "description": "Type true if you want bot to automatically react to messages",
-      "value": "true",
-      "required": false
-    },
-
- "AUTOLIKE_STATUS": {
-      "description": "Type true if you want bot to automatically like status updates, this will only work if AUTOVIEW_STATUS is true.",
-      "value": "true",
-      "required": false
-    },
-    "AUTOREAD": {
-      "description": "Put here true if you want bot to automatically bluetick messages in private.",
-      "value": "false",
-      "required": false
-    },
-    "WA_PRESENCE": {
-      "description": "This is your WhatsApp Presence Status: Here's how to set it up: Type *typing* if you want bot to show typing..., Type *recording* if you want bot to show recording..., Type *online* if you want bot to be always online, Leave this field blank if you want bot to show your actual presence.",
-      "value": "typing",
-      "required": false
+  "name": "JAWAD-MD",
+  "description": "I am JAWAD-MD WhatsApp MultiDevice Bot built in NodeJs to enhance the experience.",
+  "logo": "https://raw.githubusercontent.com/JawadYTX/KHAN-DATA/refs/heads/main/logo/KHAN.png",
+  "keywords": ["JAWAD-MD"],
+  "repository": "https://github.com/Berabruce/TREX-BOT",
+  "stack": "container",
+  "env": { 
+      "SESSION_ID": {
+      "description": "your session id",
+      "required": true,
+      "value": ""
     },
     "MODE": {
-      "description": "Type private if you don't want other people to use the bot or public if you want everyone to access.",
-      "value": "public",
-      "required": false
+      "description": "mode public or self",
+      "required": true,
+      "value": "public"
+    },
+    "ANTI_DELETE": {
+      "description": "make it true for use anti delete",
+      "required": true,
+      "value": "true"
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "make it true if you want bot to view status",
+      "required": false,
+      "value": "true"
+    },
+    "AUTO_STATUS_REPLY": {
+      "description": "make it true if you want to send message after seen status",
+      "required": false,
+      "value": "false"
+    },
+    "STATUS_READ_MSG": {
+      "description": "set your status reply message",
+      "required": false,
+      "value": "*Status Seen By JAWAD-MD 👻🤍*"
+    },
+    "OWNER_NAME": {
+      "description": "set your status reply message",
+      "required": false,
+      "value": "JAWAD-MD"
+    },
+    "OWNER_NUMBER": {
+      "description": "set your status reply message",
+      "required": false,
+      "value": "92310344XXXX"
+    },
+    "AUTO_READ": {
+      "description": "make it true if you want bot to read message",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_TYPING": {
+      "description": "make it true if you want bot to show typing",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_RECORDING": {
+      "description": "make it true if you want bot to show recording audio",
+      "required": false,
+      "value": "false"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "make it true if you want bot to show always online",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_BLOCK": {
+      "description": "make it true if you want bot to auto block only 212 numbers",
+      "required": false,
+      "value": "false"
+    },
+    "REJECT_CALL": {
+      "description": "make it true if you want to reject call",
+      "required": false,
+      "value": "false"
+    },
+    "PREFIX": {
+      "description": "Your Bot Prefix default (.)",
+      "required": false,
+      "value": "."
     }
-  },
-  "buildpacks": [
+    },
+    "buildpacks": [
     {
       "url": "heroku/nodejs"
     },
     {
-      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
     },
     {
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
     }
   ]
 }
