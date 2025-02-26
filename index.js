@@ -8,11 +8,10 @@ import {
     DisconnectReason,
     useMultiFileAuthState,
 } from '@whiskeysockets/baileys';
-import { Handler, Callupdate, GroupUpdate } from './src';
+import { Handler, Callupdate, GroupUpdate } from './src/event/index.js';
 import express from 'express';
 import pino from 'pino';
 import fs from 'fs';
-import { File } from 'megajs';
 import NodeCache from 'node-cache';
 import path from 'path';
 import chalk from 'chalk';
@@ -21,7 +20,7 @@ import axios from 'axios';
 import config from './config.cjs';
 import pkg from './lib/autoreact.cjs';
 const { emojis, doReact } = pkg;
-const prefix = process.env.PREFIX || config.PREFIX;
+
 const sessionName = "session";
 const app = express();
 const orange = chalk.bold.hex("#FFA500");
