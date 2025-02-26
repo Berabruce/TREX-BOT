@@ -1,16 +1,16 @@
 {
-  "name": "TREX-BOT",
+  "name": "JAWAD-MD",
   "version": "10.8.1",
-  "description": "TREX BOT latest multi device whatsapp bot",
+  "description": "JAWAD-MD latest multi device whatsapp bot",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name Trex Md",
-    "stop": "pm2 stop trex",
-    "restart": "pm2 restart trex"
+    "start": "pm2 start index.js --deep-monitoring --attach --name JAWAD-MD",
+    "stop": "pm2 stop JAWAD-MD",
+    "restart": "pm2 restart JAWAD-MD"
   },
-  "keywords": ["trex", "whatsapp-bot", "whatsapp md bot"],
-  "author": "Marisel",
+  "keywords": ["jawad-md", "whatsapp-bot", "whatsapp md bot"],
+  "author": "JawadTechX",
   "license": "ISC",
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
@@ -31,8 +31,10 @@
     "ffmpeg": "^0.0.4",
     "file-type": "^19.0.0",
     "fluent-ffmpeg": "^2.1.3",
+    "megajs": "^1.1.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.2.0",
+    "gifted-dls": "^1.3.0",
     "google-it": "^1.6.4",
     "human-readable": "^0.2.1",
     "jimp": "^0.16.13",
@@ -40,7 +42,6 @@
     "jsqr": "^1.4.0",
     "libphonenumber": "^0.0.10",
     "moment-timezone": "^0.5.45",
-    "nayan-media-downloader": "^2.3.3",
     "node-cache": "^5.1.2",
     "node-cron": "^3.0.3",
     "node-fetch": "^3.3.2",
