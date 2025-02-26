@@ -1,6 +1,6 @@
 {
-  "name": "JAWAD-MD",
-  "description": "I am JAWAD-MD WhatsApp MultiDevice Bot built in NodeJs to enhance the experience.",
+  "name": "TREX BOT ",
+  "description": "I am TREX MD WhatsApp MultiDevice Bot built in NodeJs to enhance the experience.",
   "logo": "https://raw.githubusercontent.com/JawadYTX/KHAN-DATA/refs/heads/main/logo/KHAN.png",
   "keywords": ["JAWAD-MD"],
   "repository": "https://github.com/Berabruce/TREX-BOT",
@@ -34,17 +34,17 @@
     "STATUS_READ_MSG": {
       "description": "set your status reply message",
       "required": false,
-      "value": "*Status Seen By JAWAD-MD 👻🤍*"
+      "value": "*Status Seen By TREX-MD 👻🤍*"
     },
     "OWNER_NAME": {
       "description": "set your status reply message",
       "required": false,
-      "value": "JAWAD-MD"
+      "value": "BRUCE BERA"
     },
     "OWNER_NUMBER": {
       "description": "set your status reply message",
       "required": false,
-      "value": "92310344XXXX"
+      "value": "254743982206"
     },
     "AUTO_READ": {
       "description": "make it true if you want bot to read message",
